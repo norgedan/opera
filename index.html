@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voci care nu mor – Opera Românească</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, serif;
+      background: #0e0e12;
+      color: #e8e3da;
+      line-height: 1.9;
+      padding-bottom: 100px;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #1a1020 0%, #0e0e12 100%);
+      padding: 70px 32px 60px;
+      text-align: center;
+      border-bottom: 1px solid #2a2030;
+    }
+
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #7a6a9a;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 700;
+      color: #f5f0ea;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: #9a8a7a;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto 16px;
+    }
+
+    .hero-nota {
+      font-size: 0.82rem;
+      color: #5a5060;
+      margin-top: 24px;
+      letter-spacing: 0.5px;
+    }
+
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* ─── CAPITOLE ─── */
+    .capitol {
+      padding: 52px 0 36px;
+      border-bottom: 1px solid #1e1e28;
+    }
+
+    .capitol:last-of-type {
+      border-bottom: none;
+    }
+
+    .capitol-nr {
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #5a4a7a;
+      margin-bottom: 12px;
+    }
+
+    .capitol h2 {
+      font-size: clamp(1.3rem, 3vw, 1.8rem);
+      font-weight: 700;
+      color: #f0ebe3;
+      margin-bottom: 28px;
+      line-height: 1.25;
+    }
+
+    .capitol p {
+      font-size: 1.05rem;
+      color: #ccc7bc;
+      margin-bottom: 20px;
+    }
+
+    .capitol p strong {
+      color: #f0ebe3;
+      font-weight: 600;
+    }
+
+    .citat {
+      border-left: 3px solid #5a3a8a;
+      margin: 32px 0;
+      padding: 18px 24px;
+      background: #13101a;
+      border-radius: 0 8px 8px 0;
+      font-size: 1.08rem;
+      color: #e8e0f0;
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    /* ─── BUTON AUDIO ─── */
+    .audio-bar {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid #1e1e28;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-asculta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #4a2a7a;
+      color: #f0e8ff;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 7px;
+      font-size: 13px;
+      cursor: pointer;
+      font-family: Georgia, serif;
+      transition: background 0.2s, transform 0.1s;
+      letter-spacing: 0.3px;
+    }
+    .btn-asculta:hover { background: #6a3a9a; }
+    .btn-asculta:active { transform: scale(0.97); }
+
+    .btn-stop {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: transparent;
+      color: #6a6070;
+      border: 1px solid #2e2838;
+      padding: 10px 18px;
+      border-radius: 7px;
+      font-size: 13px;
+      cursor: pointer;
+      font-family: Georgia, serif;
+      transition: background 0.2s;
+    }
+    .btn-stop:hover { background: #1a1820; color: #aaa; }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-eyebrow">Operă Română · Portrete · Adevăruri</div>
+  <h1>Voci care nu mor</h1>
+  <p class="hero-sub">O conversație directă despre gloria vocilor românești, paradoxul care le-a produs și sistemul care le-a pierdut</p>
+  <p class="hero-nota">Acest document s-a născut dintr-un dialog între un om și o inteligență artificială. Fără filtre diplomatice. Fără eufemisme. Exact cum merită subiectul.</p>
+</div>
+
+<div class="page">
+
+  <!-- CAPITOL 1 -->
+  <div class="capitol">
+    <div class="capitol-nr">Capitol 01</div>
+    <h2>Ce face o voce să fie istorică</h2>
+    <div id="text-1">
+      <p>Înainte să vorbim despre cine, trebuie să înțelegem ce. Ce înseamnă, concret, o voce care trece dincolo de generația ei și rămâne vie în memoria lumii muzicale? Nu e vorba de volum. Nu e vorba de acut înalt sau de registru larg. E vorba de ceva mult mai greu de obținut și mult mai ușor de simțit: comunicarea directă, fără intermediar, între voce și sufletul ascultătorului.</p>
+
+      <p>Pedagogii vocali vorbesc despre câteva calități tehnice care, atunci când coexistă la același interpret, produc acel fenomen rar pe care îl numim voce istorică. Primul este <strong>legato-ul perfect</strong> – capacitatea de a lega notele între ele fără nicio ruptură, fără niciun efort vizibil, ca și cum vocea ar curge natural, ca apa. Asta e infinit mai greu decât pare. Majoritatea cântăreților pot produce note frumoase. Puțini pot lega acele note într-un fir continuu care respiră.</p>
+
+      <p>Al doilea element este <strong>controlul pianissimo-ului</strong>. Orice voce poate fi frumoasă la intensitate mare. Adevărata tehnică se vede la intensitate minimă. A cânta pianissimo fără ca vocea să devină albă, fără să piardă culoarea și emoția, rămânând vie și comunicativă la limita inferioară a volumului – aceasta este una dintre cele mai rare abilități în istoria cântului. Foarte puțini interpreți din toată istoria operei au stăpânit-o cu adevărat.</p>
+
+      <p>Al treilea element, cel mai adesea ignorat de publicul larg, este <strong>dicția</strong>. Un cântăreț mare nu cântă sunete frumoase. Cântă cuvinte. Iar asta schimbă totul. Când auzi fiecare silabă, când sensul textului îți ajunge simultan cu nota, experiența nu mai e muzicală – devine literară și muzicală în același timp. Emoția se dublează. Aceasta este diferența dintre un interpret tehnic bun și un artist care rămâne.</p>
+    </div>
+    <div class="audio-bar">
+      <button class="btn-asculta" onclick="vorbeste('text-1','ro-RO')">🔊 Ascultă acest capitol</button>
+      <button class="btn-stop" onclick="opreste()">⏹ Stop</button>
+    </div>
+  </div>
+
+  <!-- CAPITOL 2 -->
+  <div class="capitol">
+    <div class="capitol-nr">Capitol 02</div>
+    <h2>România – uzină de talente, cimitir de infrastructură</h2>
+    <div id="text-2">
+      <p>România a produs sistematic, de-a lungul secolului douăzeci, unele dintre cele mai remarcabile voci pe care le-a auzit lumea operei. Soprane, mezzo-soprane, barițoni de calibru internațional real, nu provincial – interpreți care au urcat pe scenele de la La Scala, Covent Garden, Metropolitan Opera, Wiener Staatsoper și care au cântat cu cei mai mari dirijori și parteneri de scenă ai epocii lor.</p>
+
+      <p>Și totuși, există un paradox fundamental care definește opera românească și pe care nu îl poți ignora dacă vrei să înțelegi tabloul complet: <strong>cu cât un artist este mai bun, cu atât pleacă mai repede și nu mai revine decât în turnee.</strong> România a fost o uzină de talente vocale brute și, simultan, un cimitir al infrastructurii muzicale care ar fi trebuit să le valorifice.</p>
+
+      <p>Cotrubaș a plecat. Zeani a plecat. Gheorghiu a plecat. Cortez a plecat. Herlea a cântat în principal în afară. Hartig a plecat. Niciunul nu a construit o carieră centrată pe România. Niciunul nu a avut motive suficiente să rămână. Aceasta nu este o coincidență – este un sistem.</p>
+
+      <p>Opera Națională București a fost și rămâne o instituție cu probleme structurale cronice: subfinanțare, directori schimbați după criterii politice, repertoriu conservator, scenografii îmbătrânite, incapacitate de a atrage sau reține talentele pe care propriul sistem educațional le produce. Conservatoarele din București, Cluj și Iași formează în continuare voci bune. Dar <strong>formarea interpretativă – actoria, muzicalitatea stilistică, înțelegerea dramaturgiei unui rol – rămâne mult în urma școlilor occidentale.</strong></p>
+
+      <p>Există o paralelă pe care nu o facem suficient de des, dar care explică totul: România tratează vocea umană exact cum tratează siliciul, petrolul sau cerealele – o exportă brută, fără să adauge valoare, fără să construiască infrastructura care ar transforma talentul individual în instituție durabilă. Primim faima internațională a lui Cotrubaș sau Gheorghiu, dar nu construim nimic cu ea acasă. Este același pattern cu emigrația medicilor, inginerilor și programatorilor. Doar că în operă sună mai frumos.</p>
+    </div>
+    <div class="audio-bar">
+      <button class="btn-asculta" onclick="vorbeste('text-2','ro-RO')">🔊 Ascultă acest capitol</button>
+      <button class="btn-stop" onclick="opreste()">⏹ Stop</button>
+    </div>
+  </div>
+
+  <!-- CAPITOL 3 -->
+  <div class="capitol">
+    <div class="capitol-nr">Capitol 03</div>
+    <h2>Ileana Cotrubaș – fenomenul care apare o dată la câteva generații</h2>
+    <div id="text-3">
+      <p>Există interpreți excelenți. Există interpreți mari. Și există, la intervale de câteva generații, câte un fenomen care redefinește ce înseamnă să cânți operă. Ileana Cotrubaș a fost unul dintre aceștia. Născută în 1939 la Galați, formată la Conservatorul din București sub îndrumarea lui Constantin Stroescu, ea a urmat drumul pe care l-au urmat toți cei mai buni: a plecat. Frankfurt, 1968. Și de acolo, lumea.</p>
+
+      <p>Vocea ei nu era un instrument uriaș. Nu era o soprană care să umple sala prin forță brută. Era ceva mai rar: <strong>o voce care comunica direct cu sufletul ascultătorului, fără intermediar.</strong> Legato-ul ei era perfect în sensul tehnic strict al cuvântului. Controlul pianissimo-ului – legendar. Putea să cânte la intensitate minimă fără ca vocea să devină albă, rămânând colorată, vie, emoțională chiar și la limitele inferioare ale volumului.</p>
+
+      <p>Rolul ei definitoriu a fost Violetta din La Traviata de Verdi. Înregistrarea cu Carlos Kleiber la München în 1977 este considerată de mulți critici drept cea mai bună înregistrare a acestei opere din toate timpurile. Motivul nu e tehnic. Motivul e că Cotrubaș nu cânta o femeie care moare frumos pe scenă. Cânta o femeie reală, contradictorie, care iubește cu disperare și se sacrifică cu luciditate. Simplitatea interpretării era devastatoare tocmai pentru că nu era dramatizată. Era spusă. Și acea simplitate te rupea.</p>
+
+      <p>Pamina din Flautul Fermecat al lui Mozart, Mimi din La Bohème a lui Puccini, Gilda din Rigoletto, Tatiana din Eugene Onegin al lui Ceaikovski – în fiecare dintre aceste roluri a lăsat o amprentă pe care criticii și ascultătorii o invocă și astăzi. Nu pentru că era perfectă tehnic, deși era, ci pentru că era autentică uman.</p>
+
+      <p>În 1983, la 44 de ani, în plin apogeu al carierei, a ales să se retragă. A declarat că voia să-și păstreze vocea în memoria publicului exact cum era, nu să continue până la degradare inevitabilă. Această decizie este de o raritate absolută în lumea operei, unde ego-ul împinge de obicei interpreții să continue mult prea mult. A avut dreptate. Nu există înregistrări cu Cotrubaș în declin. Există doar Cotrubaș în glorie.</p>
+
+      <div class="citat">Ileana Cotrubaș a murit în august 2026, la 87 de ani. Opera Națională București a descris-o drept una dintre cele mai importante voci românești ale secolului douăzeci și un reper al artei lirice internaționale. Lumea operei a jelit-o cu o sinceritate care spune tot – nu era genul de artistă iubită din obligație. Era iubită pentru că îți lua ceva din suflet și ți-l dădea înapoi transformat.</div>
+    </div>
+    <div class="audio-bar">
+      <button class="btn-asculta" onclick="vorbeste('text-3','ro-RO')">🔊 Ascultă acest capitol</button>
+      <button class="btn-stop" onclick="opreste()">⏹ Stop</button>
+    </div>
+  </div>
+
+  <!-- CAPITOL 4 -->
+  <div class="capitol">
+    <div class="capitol-nr">Capitol 04</div>
+    <h2>Angela Gheorghiu – cel mai complex caz din opera românească</h2>
+    <div id="text-4">
+      <p>Angela Gheorghiu este probabil numele cel mai cunoscut al operei românești în rândul publicului larg din ultimele decenii. Și este, simultan, cel mai polarizant. Vocea există – splendidă, caldă, cu o prezență scenică magnetică și o carieră globală reală. A dus România pe coperta fiecărei reviste de operă din lume. Acestea sunt fapte, nu opinii.</p>
+
+      <p>Dar tabloul complet nu poate ignora cealaltă față. Numărul de anulări de spectacole, conflictele publice cu dirijori și regizori de primă clasă, episoadele care au ajuns în presa muzicală internațională – toate acestea au creat o imagine contradictorie care a afectat concret cariera. La un moment dat, Covent Garden a refuzat să o mai contracteze fără clauze speciale. Acesta nu este un zvon – este un fapt documentat în presa muzicală britanică.</p>
+
+      <p>Relația tumultuoasă și publică cu tenorul Roberto Alagna a adăugat un strat de spectacol mediatic care, în ochii unor case de operă serioase, a transformat un artist în personaj. Iar în lumea operei, care rămâne în esență conservatoare și orientată spre muzică, această transformare costă.</p>
+
+      <p><strong>Concluzia sinceră este aceasta: Angela Gheorghiu este un talent enorm gestionat adesea prost.</strong> Vocea pe care o are ar fi putut construi o carieră fără nicio controversă, comparabilă cu cele mai mari soprane ale generației ei. Că nu s-a întâmplat astfel nu este din lipsă de talent. Este din altceva – dintr-o combinație de temperament și alegeri pe care numai ea le poate evalua cu adevărat.</p>
+    </div>
+    <div class="audio-bar">
+      <button class="btn-asculta" onclick="vorbeste('text-4','ro-RO')">🔊 Ascultă acest capitol</button>
+      <button class="btn-stop" onclick="opreste()">⏹ Stop</button>
+    </div>
+  </div>
+
+  <!-- CAPITOL 5 -->
+  <div class="capitol">
+    <div class="capitol-nr">Capitol 05</div>
+    <h2>Virginia Zeani și Viorica Cortez – gloriile pe care România le-a uitat</h2>
+    <div id="text-5">
+      <p>Există o categorie aparte de artiști în opera românească: cei care au construit cariere internaționale de primă clasă și care sunt, acasă, aproape necunoscuți publicului larg. Motivul e simplu și dureros – au trăit și activat aproape exclusiv în afara României, iar o țară tinde să celebreze ceea ce vede, nu ceea ce a pierdut.</p>
+
+      <p><strong>Virginia Zeani</strong> este poate cel mai flagrant exemplu. Soprană dramatică de clasă mondială, parteneră de scenă a lui Pavarotti, cu o carieră la Roma, Paris și Chicago care acoperă decenii de prestații la cel mai înalt nivel. A cântat cu marii dirijori ai epocii, a abordat repertoriul dramatic verdian cu o autoritate pe care puțini o egalau. În România, numele ei este cunoscut doar de cunoscători. Aceasta este o formă de ingratitudine culturală pe care o înregistrăm fără comentarii suplimentare.</p>
+
+      <p><strong>Viorica Cortez</strong> a construit o carieră solidă la Paris și în marile teatre europene ca mezzo-soprană. Carmen-ul ei era un eveniment – nu un rol jucat, ci unul trăit. Nu a avut strălucirea mediatică a Gheorghiu și nici aura de legendă a Cotrubaș, dar muzical a fost poate mai riguroasă decât amândouă. A muncit, a livrat, a respectat contractele. Lumea operei profesioniste a apreciat-o. Publicul larg din România – mai puțin.</p>
+
+      <p>Cele două reprezintă, împreună, o generație întreagă de voci românești care au onorat o tradiție fără să aibă parte de recunoașterea pe care o meritau acasă. Istoria le va corecta locul. Sau nu. Depinde de cât de mult ne pasă să ne cunoaștem propria valoare.</p>
+    </div>
+    <div class="audio-bar">
+      <button class="btn-asculta" onclick="vorbeste('text-5','ro-RO')">🔊 Ascultă acest capitol</button>
+      <button class="btn-stop" onclick="opreste()">⏹ Stop</button>
+    </div>
+  </div>
+
+  <!-- CAPITOL 6 -->
+  <div class="capitol">
+    <div class="capitol-nr">Capitol 06</div>
+    <h2>Nicolae Herlea – cel mai complet interpret masculin pe care l-a dat România</h2>
+    <div id="text-6">
+      <p>Dacă opera românească feminină a produs un șir de soprane excepționale, opera masculină a dat, în mod covârșitor, barițoni. Și cel mai mare dintre ei, fără nicio îndoială, a fost <strong>Nicolae Herlea</strong>. Vocea lui era caldă, rotundă, extrem de expresivă – un instrument care servea muzica, nu care se impunea în fața ei. A cântat la Metropolitan Opera, la Scala și pe marile scene europene. A fost partener de scenă cu Maria Callas. Aceasta nu se întâmplă prin noroc.</p>
+
+      <p>Herlea reprezintă tipul de artist care face ca muzica să pară simplă, ceea ce e cel mai dificil lucru din lume. Nu auzi tehnica. Auzi personajul. Nu auzi efortul. Auzi emoția. Aceasta este definiția unui interpret mare, indiferent de registru sau epocă.</p>
+
+      <p>România a produs barițoni și soprane. Nu a produs, în mod semnificativ, tenori de calibru mondial. Herlea rămâne, pe parte masculină, un vârf neegalat și, după toate indiciile, greu de egalat în viitorul previzibil.</p>
+    </div>
+    <div class="audio-bar">
+      <button class="btn-asculta" onclick="vorbeste('text-6','ro-RO')">🔊 Ascultă acest capitol</button>
+      <button class="btn-stop" onclick="opreste()">⏹ Stop</button>
+    </div>
+  </div>
+
+  <!-- CAPITOL 7 -->
+  <div class="capitol">
+    <div class="capitol-nr">Capitol 07</div>
+    <h2>Anița Hartig – continuatoarea serioasă a unei tradiții glorioase</h2>
+    <div id="text-7">
+      <p>Născută în 1984 la Lugoj, un oraș cu tradiție muzicală solidă în Banat, <strong>Anița Hartig</strong> a ales calea grea: construire treptată, fără scurtături, fără scandaluri mediatice. Formată la Universitatea de Muzică din București și perfecționată în Austria, cariera ei serioasă a pornit de la Opera din Frankfurt și s-a consolidat la Wiener Staatsoper – Viena, cea mai competitivă scenă de operă din lume ca standard zilnic. Nu e ușor să fii angajat acolo. E și mai greu să rămâi relevant.</p>
+
+      <p>Vocea ei este soprană lirică cu extensii ușoare spre registrul spinto – poate aborda și roluri cu mai multă greutate dramatică. Căldura din registrul de mijloc, zona cea mai seducătoare a unui sopran, și emisia curată în acut fără stridentul care afectează atât de multe soprane contemporane – acestea sunt calitățile ei tehnice definitorii. Mimi din La Bohème, Micaëla din Carmen, Contesa Almaviva din Nunta lui Figaro, Antonia din Poveștile lui Hoffmann – roluri în care demonstrează maturitate interpretativă și seriozitate artistică.</p>
+
+      <p>Trăim într-o epocă în care spectacolul mediatic a înlocuit adesea substanța muzicală. Cântăreți cu voci mediocre dar cu prezență puternică pe rețelele sociale obțin contracte pe care alții mai talentați nu le obțin. Hartig este un contraexemplu sănătos. Cariera ei este construită pe muzică, nu pe imagine. Asta o face mai puțin celebră publicului larg, dar mai respectată în lumea profesională – care este singura lume unde contează cu adevărat în operă.</p>
+
+      <p>Dacă există un nume românesc al generației actuale care duce mai departe tradiția serioasă a Cotrubaș – nu spectaculozitatea Gheorghiu, ci seriozitatea artistică – acela este Anița Hartig. Între ele două stă toată demnitatea vocii românești feminine în opera mondială.</p>
+    </div>
+    <div class="audio-bar">
+      <button class="btn-asculta" onclick="vorbeste('text-7','ro-RO')">🔊 Ascultă acest capitol</button>
+      <button class="btn-stop" onclick="opreste()">⏹ Stop</button>
+    </div>
+  </div>
+
+  <!-- CAPITOL 8 -->
+  <div class="capitol">
+    <div class="capitol-nr">Capitol 08</div>
+    <h2>Gaura tenorală – diagnosticul unei absențe structurale</h2>
+    <div id="text-8">
+      <p>Există o absență în opera românească pe care puțini o articulează explicit, dar pe care oricine o simte dacă privește tabloul complet: <strong>România nu a produs tenori de calibru mondial.</strong> Nu unul. Nu în toată istoria modernă a cântului românesc. Aceasta nu este o ghiciteală – este un diagnostic.</p>
+
+      <p>Vocea de tenor este cea mai pretențioasă din punct de vedere al formării. Necesită o pedagogie vocală specializată, o tranziție extrem de delicată în zona passaggio-ului – trecerea între registre – și o rezistență psihologică ieșită din comun la presiunea publicului, care judecă tenorul aproape exclusiv după acutele sale. Un Do de piept prost emis sau absent și cariera este compromisă în ochii publicului. Această presiune creează blocaje tehnice și psihologice pe care formarea pedagogică trebuie să le anticipeze și să le dizolve. Școala românească de canto nu a avut în mod constant pedagogi specializați în vocea tenorală la nivelul la care a avut pentru soprană sau bariton.</p>
+
+      <p>Mai există și un factor de piață: italieni, spanioli și latino-americani domină categoria tenorului de generații. Pavarotti, Domingo și Carreras au creat un standard față de care orice tenor nou este comparat involuntar. A intra în competiție directă cu această tradiție este dificil pentru orice țară, nu numai pentru România.</p>
+
+      <p>Fără un model local convingător, fără o tradiție pedagogică specifică tenorală, cercul vicios se perpetuează. Nu ai modele, nu formezi pedagogi specializați, nu apar talente, nu ai modele. România a rupt acest cerc în zona sopranică și baritonal. În zona tenorală, cercul rămâne închis.</p>
+    </div>
+    <div class="audio-bar">
+      <button class="btn-asculta" onclick="vorbeste('text-8','ro-RO')">🔊 Ascultă acest capitol</button>
+      <button class="btn-stop" onclick="opreste()">⏹ Stop</button>
+    </div>
+  </div>
+
+  <!-- CAPITOL 9 -->
+  <div class="capitol">
+    <div class="capitol-nr">Capitol 09</div>
+    <h2>Opera românească contemporană – o scenă fără compozitori</h2>
+    <div id="text-9">
+      <p>Există o altă absență, mai puțin discutată decât gaura tenorală, dar la fel de revelatoare pentru sănătatea unui ecosistem muzical: <strong>România nu are practic niciun compozitor de operă contemporan care să conteze internațional.</strong> Repertoriul operistic românesc se oprește la Sabin Drăgoi, Gheorghe Dumitrescu și Paul Constantinescu – compozitori respectabili, dar de acum jumătate de secol. Zero avangardă, zero experiment, zero risc asumat în creația lirică contemporană.</p>
+
+      <p>Aceasta este o problemă structurală diferită de cea a interpretării. Poți forma cântăreți buni fără compozitori vii. Dar nu poți construi o scenă operistică vie și relevantă fără creație nouă. Marile case de operă din lume – Vienna, Londra, Amsterdam, New York – comandă premiere, lucrează cu compozitori vii, asumă riscul estetic al noului. Opera Română București nu face asta. Nu pentru că nu ar vrea, ci pentru că sistemul de finanțare și de viziune artistică nu o permite și, mai grav, nu o stimulează.</p>
+
+      <p>O scenă care cântă exclusiv repertoriu din secolele optsprezece și nouăsprezece nu este o scenă vie. Este un muzeu cu intrare. Acesta este, poate, cel mai onest diagnostic despre starea actuală a operei românești ca instituție.</p>
+    </div>
+    <div class="audio-bar">
+      <button class="btn-asculta" onclick="vorbeste('text-9','ro-RO')">🔊 Ascultă acest capitol</button>
+      <button class="btn-stop" onclick="opreste()">⏹ Stop</button>
+    </div>
+  </div>
+
+  <!-- CAPITOL 10 -->
+  <div class="capitol">
+    <div class="capitol-nr">Capitol 10</div>
+    <h2>Firul care leagă totul – vocea ca resursă națională nerecunoscută</h2>
+    <div id="text-10">
+      <p>Există o legătură pe care nu o facem de obicei, dar care există și este fundamentală pentru a înțelege de ce opera românească arată cum arată. <strong>România tratează vocea umană exact cum tratează orice altă resursă naturală sau umană pe care o produce: o exportă brută.</strong></p>
+
+      <p>Talentul vocal românesc este real, este recunoscut internațional, este verificabil prin carierele a zeci de cântăreți pe marile scene ale lumii. Dar valoarea adăugată – formarea completă, infrastructura instituțională, repertoriul propriu contemporan, pedagogia specializată, investiția în carierele tinere – rămâne în mare parte absentă sau insuficientă. Exportăm voce brută și importăm faima altora.</p>
+
+      <p>Cotrubaș a plecat la Frankfurt și a construit acolo ce nu putea construi în România. Hartig a plecat la Viena din același motiv. Fiecare plecare a unui talent de vârf este un semnal. Acumularea de semnale timp de șaptezeci de ani nu mai este accident – este politică neasumată.</p>
+
+      <p>Paradoxul central al operei românești, formulat cel mai simplu: <strong>suntem suficient de buni ca să producem artiști de talie mondială și insuficient de serioși ca să-i păstrăm.</strong> Asta nu e o condamnare – este o observație. Și observațiile corecte sunt primul pas spre schimbare, dacă există voință pentru ea.</p>
+    </div>
+    <div class="audio-bar">
+      <button class="btn-asculta" onclick="vorbeste('text-10','ro-RO')">🔊 Ascultă acest capitol</button>
+      <button class="btn-stop" onclick="opreste()">⏹ Stop</button>
+    </div>
+  </div>
+
+  <!-- CAPITOL 11 -->
+  <div class="capitol">
+    <div class="capitol-nr">Capitol 11</div>
+    <h2>Ce rămâne – vocea nu moare, înregistrarea e dovada</h2>
+    <div id="text-11">
+      <p>Există un singur lucru pe care sistemul, politica și indiferența nu îl pot lua: înregistrarea. Vocea Ilenei Cotrubaș în Violetta cu Carlos Kleiber la München în 1977 există astăzi exact cum a existat în seara premierei. Nu îmbătrânește. Nu se degradează. Cine vrea să înțeleagă ce înseamnă o voce istorică poate să asculte acea înregistrare acum, în acest minut, și va înțelege totul fără nicio explicație suplimentară.</p>
+
+      <p>Același lucru este valabil pentru Herlea, pentru Zeani, pentru Cortez. Arhivele sonore ale marilor case de operă, înregistrările de studio, transmisiunile radio conservate – toate acestea constituie o moștenire vie. Nu metaforică. Literalmente vie, în sensul că produce emoție reală în ascultători reali, acum, în prezent.</p>
+
+      <p>Anița Hartig cântă astăzi. Înregistrările ei se acumulează. Peste douăzeci de ani, cineva va asculta Mimi-ul ei de la Viena și va înțelege de ce a contat. Acesta este singurul tip de nemurire pe care îl oferă opera: nu statuile, nu premiile, nu titlurile onorifice – ci sunetul care rămâne după ce totul tace.</p>
+
+      <div class="citat">Voci care nu mor nu este o metaforă romantică. Este o realitate tehnică și emoțională în același timp. Înregistrarea este memoria lumii. Iar vocile românești care au ajuns în acea memorie – cele câteva, cele alese, cele care au muncit și au trăit muzica – vor fi acolo atâta timp cât va exista cineva care să asculte.</div>
+    </div>
+    <div class="audio-bar">
+      <button class="btn-asculta" onclick="vorbeste('text-11','ro-RO')">🔊 Ascultă acest capitol</button>
+      <button class="btn-stop" onclick="opreste()">⏹ Stop</button>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<script>
+  function vorbeste(id, limba) {
+    if (!window.speechSynthesis) {
+      alert('Browserul tău nu suportă redarea audio. Folosește Chrome, Edge sau Safari.');
+      return;
+    }
+    speechSynthesis.cancel();
+    var text = document.getElementById(id).innerText;
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = limba;
+    u.rate = 0.88;
+    u.pitch = 1.0;
+    speechSynthesis.speak(u);
+  }
+
+  function opreste() {
+    if (window.speechSynthesis) speechSynthesis.cancel();
+  }
+</script>
+
+</body>
+</html>
