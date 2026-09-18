@@ -1,0 +1,17 @@
+# backup-uri si temporare
+*.bak
+*.tmp
+*~
+*.swp
+*.orig
+
+# scripturi de lucru locale (one-off, descarcate temporar)
+/*.sh
+# ...dar scripturile intentionate, versionate, traiesc in scripts/
+!scripts/
+
+# sistem
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
