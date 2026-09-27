@@ -1,0 +1,21 @@
+#!/bin/sh
+# pre-push — IDENTIC in toate cele 6 repo-uri norgedan.
+# verifica-site.sh [10] compara hook-urile intre ele: o singura garda, nu sase.
+#
+# Activare, o singura data in fiecare clona:  git config core.hooksPath scripts/hooks
+# Ocolire explicita, doar constient:          git push --no-verify
+#
+# La fiecare push, din oricare repo, se verifica INTREGUL site: starea tuturor
+# clonelor e adusa de pe GitHub, arborii trebuie sa fie curati, nicio clona
+# in urma — apoi toate verificarile din scripts/documente.tsv.
+
+top=$(git rev-parse --show-toplevel) || exit 1
+hub="$(dirname "$top")/norgedan.github.io"
+
+if [ ! -f "$hub/scripts/verifica-site.sh" ]; then
+  echo "pre-push: nu gasesc $hub/scripts/verifica-site.sh" >&2
+  echo "pre-push: hub-ul trebuie clonat langa $(basename "$top")." >&2
+  exit 1
+fi
+
+exec sh "$hub/scripts/verifica-site.sh" --push "$(basename "$top")"
